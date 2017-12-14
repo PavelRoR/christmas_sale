@@ -1,0 +1,565 @@
+@import url(fontello.css);
+article, aside, figure, footer, header, nav, section, details, summary, main {display: block;}
+
+body{ position:relative; -webkit-text-size-adjust:100%; -webkit-font-smoothing:antialiased; line-height: 1;}
+html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, menu, nav, section, time, mark, audio, video, details, summary  {
+    margin: 0; 
+    padding: 0; 
+    border: 0; 
+    font-size: 100%; 
+    font-weight: normal; 
+    vertical-align: baseline; 
+    background: transparent; 
+    font-family:'RM';
+	text-transform: none
+}
+body{
+	min-width: 1170px;
+}
+
+em{
+	font-family: inherit!important
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+img{
+	max-width: 100%;
+}
+.clear{
+	clear: both;
+}
+img {
+	max-height: 100%
+}
+hr {
+	clear: both;
+}
+strong {
+	font-family: 'RB';
+}
+@font-face  {
+	font-family: 'RB';
+	src:  url('../font/rb.ttf') format('truetype');
+}
+@font-face  {
+	font-family: 'RR';
+	src:  url('../font/rr.ttf') format('truetype');
+}
+@font-face  {
+	font-family: 'RM';
+	src:  url('../font/rm.ttf') format('truetype');
+}
+@font-face  {
+	font-family: 'RBL';
+	src:  url('../font/rbl.ttf') format('truetype');
+}
+*{
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box; 
+}
+h1{
+	text-align: center;
+	font-family: 'RB';
+	font-size: 40px;
+}
+.center{
+	clear: both;
+	margin: 0 auto;
+	text-align: center;
+}
+.container{
+	margin: 0 auto;
+	width: 1150px;
+	padding: 0 10px;
+}
+.line {
+    height: 3px;
+    width: 80px;
+    margin: 10px 0;
+}
+input{
+	display: block;
+}
+.red{
+	color: red;
+}
+/*================
+HEADER
+================*/
+header {
+	background: white;
+	background-size: cover;
+}
+header .top {
+	padding: 20px;
+	overflow: hidden;
+}
+header .top .container {
+}
+header .logo {
+	background: url(../img/logo.png) center no-repeat;
+	width: 349px;
+	height: 32px;
+	float: left;
+	margin: 10px 70px 0 0;
+}
+header .soc {
+	margin-top: 10px;
+	float: left;
+}
+header a {
+	float: left;
+	margin-right: 30px;
+}
+header a img {
+}
+header .recv {
+	float: right;
+}
+header span {
+}
+header i {
+	color: #c615c6;
+}
+header .container {
+}
+header .mid {
+	background: url(../img/header.jpg) no-repeat center bottom;
+	background-size: cover;
+	padding: 40px 0;
+	color: white;
+}
+header h1 {
+	font-size: 40px;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+}
+header h3 {
+	font-size: 20px;
+	text-align: center;
+	font-family: 'RR';
+	margin-bottom: 40px;
+}
+header h2 {
+	text-transform: uppercase;
+	font-size: 26px;
+	font-family: 'RR';
+	text-align: center;
+	margin-bottom: 30px;
+}
+header ul {
+	font-size: 18px;
+	line-height: 1.4;
+}
+header li {
+	font-size: 18px;
+	list-style: disc;
+	margin-left: 30px;
+	line-height: 1.3;
+}
+
+/*================
+VIDOS
+================*/
+.vidos {
+	padding: 40px 0;
+	background: white;
+}
+.vidos .container {
+}
+.vidos .videoblock {
+	max-width: 650px;
+	margin: 0 auto;
+	position: relative;
+}
+.vidos img {
+}
+.vidos .wrap {
+	top: 3.9%;
+    height: 87.9%;
+    bottom: 8.2%;
+    left: 2.5%;
+    width: 94.7%;
+    right: 2.8%;
+	position: absolute;
+}
+/*================
+POCHEMU
+================*/
+.pochemu {
+	padding-bottom: 50px;
+	overflow: hidden;
+}
+.pochemu h1 {
+	background: #ad3a99;
+	padding: 30px 0;
+	color: white;
+	font-family: RR;
+	position: relative;
+}
+.pochemu h1:after {
+	content: '';
+    height: 0px;
+    width: 0px;
+    position: absolute;
+    border: 30px solid transparent;
+    border-top: 30px solid #ad3a99;
+    bottom: -60px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+	text-transform: uppercase;
+}
+.pochemu  h1 .container{
+	text-transform: uppercase;
+}
+.pochemu .container>ul {
+	margin: 50px 0 35px;
+}
+.pochemu .container>ul>li {
+	background: url(../img/gal.png) no-repeat center left;
+	font-size: 20px;
+	padding: 6px;
+	line-height: 1.4;
+	padding-left: 45px;
+}
+.pochemu .center {
+}
+.pochemu .center>img {
+	width: 110px;
+}
+.pochemu .container>h2 {
+	text-align: center;
+	font-size: 35px;
+	font-family: RBL;
+	color: #ad3a99;
+	text-transform: uppercase;
+	margin: 20px 0 40px;
+}
+.pochemu .blocks {
+}
+.pochemu .block {
+	width: 47.5%;
+	margin: 0 1% 30px;
+	float: left;
+	padding: 1%;
+	border: 2px solid silver;
+	border-radius: 3px;
+}
+.pochemu .block:nth-of-type(5){
+	margin: 0 auto;
+	float: none;
+	clear: both;
+}
+.pochemu .block .pri{
+	font-size: 18px;
+	text-align: center;
+}
+.pochemu .block .pri span{
+	color: #9d0a0f;
+	font-family: RB;
+}
+.pochemu .block ul {
+}
+.pochemu .block li {
+	font-size: 18px;
+	line-height: 1.4;
+}
+.pochemu .block strong {
+}
+.pochemu .photo {
+	display: block;
+	height: 175px;
+	position: relative;
+}
+.pochemu .photo img {    
+	position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+.pochemu .photo span {
+}
+.pochemu p {
+	padding: 15px;
+	font-size: 16px
+}
+.pochemu p strong {
+}
+.pochemu h3 {
+	text-align: center;
+	font-size: 22px;
+	margin: 10px 0;
+}
+.pochemu h3 span {
+	color: #9d0a0f;
+}
+
+/*================
+REG
+================*/
+.reg{
+	overflow: hidden;
+	padding-bottom: 60px;
+}
+.reg h1 {
+	background: #ad3a99;
+	padding: 30px 0;
+	color: white;
+	font-family: RR;
+	position: relative;
+	margin-bottom: 90px;
+	text-transform: uppercase;
+}
+.reg h1:after {
+	content: '';
+    height: 0px;
+    width: 0px;
+    position: absolute;
+    border: 30px solid transparent;
+    border-top: 30px solid #ad3a99;
+    bottom: -60px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+.reg  h1 .container{
+	text-transform: uppercase;
+}
+.reg .block{
+	width: 23%;
+	float: left;
+	text-align: center;
+	margin: 0 1% 0;
+	overflow: hidden;
+}
+.reg .block .image{
+	background: url(../img/r1.png) no-repeat center;
+	background-size: cover;
+	height: 128px;
+	width: 128px;
+	margin: 0 auto 20px;
+}
+.reg .block:nth-of-type(2) .image{
+	background: url(../img/r2.png) no-repeat center;
+	background-size: cover;
+}
+.reg .block:nth-of-type(3) .image{
+	background: url(../img/r3.png) no-repeat center;
+	background-size: cover;
+}
+.reg .block:nth-of-type(4) .image{
+	background: url(../img/r4.png) no-repeat center;
+	background-size: cover;
+}
+.reg .block .image span{
+	font-size: 28px;
+	display: block;
+	width: 40px;
+	height: 40px;
+	padding: 3px 6px 3px 6px;
+	text-align: center;
+	border-radius: 50%;
+	background-color: rgba(61, 115, 133, 0.498039);
+	border: 3px solid black;
+}
+.reg .block p{
+	overflow: hidden;
+}
+/*================
+JOB
+================*/
+.job {
+	overflow: hidden;
+	padding-bottom: 50px;
+	background: #ededed;
+}
+.job  h1 {
+	background: #ad3a99;
+	padding: 30px 0;
+	color: white;
+	font-family: RR;
+	position: relative;
+	margin-bottom: 90px;
+	text-transform: uppercase;
+}
+.job h1:after {
+	content: '';
+    height: 0px;
+    width: 0px;
+    position: absolute;
+    border: 30px solid transparent;
+    border-top: 30px solid #ad3a99;
+    bottom: -60px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+.job h1 .container {
+}
+.job .container {
+}
+.job .block {
+	margin-bottom: 20px;
+}
+.job .block p {
+	margin-bottom: 15px;
+}
+.job a {
+}
+.job .pismo {
+	background: white;
+	padding: 5px;
+}
+.job .pismo p {
+	margin-left: 20px;
+}
+.job h2 {
+	font-size: 23px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+.job span {
+	font-size: 20px;
+	margin-bottom: 10px;
+	background: yellow;
+}
+.job span .pismo{
+	background: yellow;
+}
+.job ul {
+	margin-bottom: 20px;
+}
+.job li {
+	line-height: 1.4;
+	list-style: disc;
+	margin-left: 50px;
+}
+.job .banners img{
+	float: left;
+	width: 550px;
+	margin-bottom: 10px;
+}
+.job .button{
+	display: block;
+	float: left;
+	padding: 8px 25px;
+	color: black;
+	background: #feb100;
+	margin-left: 30px;
+	border-radius: 8px;
+	width: 189px;
+}
+/*================
+PRICHIN
+================*/
+.prichin {
+	padding-bottom: 50px;
+}
+.prichin  h1 {
+	background: #ad3a99;
+	padding: 30px 0;
+	color: white;
+	font-family: RR;
+	position: relative;
+	margin-bottom: 60px;
+	text-transform: uppercase;
+}
+.prichin h1:after {
+	content: '';
+    height: 0px;
+    width: 0px;
+    position: absolute;
+    border: 30px solid transparent;
+    border-top: 30px solid #ad3a99;
+    bottom: -60px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+.prichin  h1 .container{
+	text-transform: uppercase;
+}
+.prichin ul {
+}
+.prichin li {
+	background: url(../img/plus.png) no-repeat center left;
+	font-size: 18px;
+	padding: 7px 0 7px 45px;
+	line-height: 1.4;
+}
+/*================
+OTZ
+================*/
+.otz {
+}
+.otz h1 {
+	background: #ad3a99;
+	padding: 30px 0;
+	color: white;
+	font-family: RR;
+	position: relative;
+	margin-bottom: 60px;
+	text-transform: uppercase;
+}
+.otz h1:after {
+	content: '';
+    height: 0px;
+    width: 0px;
+    position: absolute;
+    border: 30px solid transparent;
+    border-top: 30px solid #ad3a99;
+    bottom: -60px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+.otz .container {
+}
+.otz .block {
+	max-width: 650px;
+	margin: 0 auto;
+	position: relative;
+}
+.otz img {
+}
+.otz .wrap {
+	top: 3.9%;
+    height: 87.9%;
+    bottom: 8.2%;
+    left: 2.5%;
+    width: 94.7%;
+    right: 2.8%;
+	position: absolute;
+}
+/*================
+simplebox
+================*/
+#simplebox img, #simplebox div, #simplebox span {margin:0 ;padding:0; border:none; outline:none;}
+#simple-overlay {position: fixed; top: 0; left: 0; bottom: 0; right: 0; background: #000; z-index: 1100; display: none;}
+#simple-tmp {visibility:hidden; overflow: auto; display:none;}
+#simple-outer {position: absolute; top: 0; left: 0; background: #FFF; display: none; border-radius:7px; z-index: 1101; -moz-border-radius:7px; -webkit-border-radius:7px; box-shadow:0 0 10px 2px rgba(0,0,0,0.4); -moz-box-shadow:0 0 10px 2px rgba(0,0,0,0.4); -webkit-box-shadow:0 0 10px 2px rgba(0,0,0,0.4);}
+#simple-inner { position: absolute; top: 0; left: 0; width: 1px; height: 1ыpx; overflow: hidden;}
+#simple-img { display:block; height:100%; line-height:0; padding:0; vertical-align:top; width:100%;}
+#simple-loading {background:none repeat scroll 0 0 transparent; cursor:pointer; display:none; height:40px; left:50%; margin-left:-20px; margin-top:-20px; overflow:hidden; position:fixed; top:50%; width:40px; z-index:1104;}
+#simple-loading div {background:url("imgs/simplebox.png") no-repeat scroll 0 0 transparent; height:480px; left:0; position:absolute; top:0; width:40px;}
+#simple-close { position: absolute; top: -15px; right: -15px; width: 32px; height: 32px; background: url('imgs/simplebox.png') -40px 0 no-repeat; cursor: pointer; z-index: 1103; display:none; }
+#simple-title { position: absolute; bottom: 0; left: 0; font-family: Arial,sans-serif; font-size: 12px; z-index: 1102;}
+#simple-title.simple-title-inside {width:100%; padding: 10px 0; text-align: center; color: #333;}
+#simple-title.simple-title-over {color: #FFF; text-align: center;}
+#simple-title #simple-title-over {padding: 10px; background: rgba(0,0,0,0.6); display: block;}
+#simple-left, #simple-right { position: absolute; bottom: 0px; height: 100%; width: 35%; cursor: pointer; outline: none; z-index: 1102; display: none;}
+#simple-left {left: 0;}
+#simple-right {right: 0;}
+#simple-left-ico, #simple-right-ico {position: absolute; top: 50%; left: -9999px; width: 30px; height: 30px; margin-top: -15px; cursor: pointer; z-index: 1102; display: block;}
+#simple-left-ico {background: transparent url('imgs/simplebox.png') -40px -30px no-repeat;}
+#simple-right-ico {background: transparent url('imgs/simplebox.png') -40px -60px no-repeat;}
+#simple-left:hover span {left: 20px;}
+#simple-right:hover span {left: auto; right: 20px;}

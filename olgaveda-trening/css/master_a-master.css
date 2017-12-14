@@ -1,0 +1,50 @@
+#u1789
+{
+	background: transparent url("../images/greyzz.jpg") repeat center center;
+}
+
+#u1789_align_to_page
+{
+	position: relative;
+}
+
+#u1801
+{
+	border-style: none;
+	border-color: transparent;
+	background-color: transparent;
+	position: relative;
+}
+
+#u1790-4
+{
+	background-color: transparent;
+	color: #C1272D;
+	font-size: 20px;
+	line-height: 24px;
+	text-transform: uppercase;
+	text-align: center;
+	font-family: open-sans, sans-serif;
+	font-weight: 400;
+	position: relative;
+}
+
+#u1791-4
+{
+	background-color: transparent;
+	color: #C1272D;
+	font-size: 18px;
+	line-height: 22px;
+	text-transform: uppercase;
+	text-align: center;
+	font-family: open-sans, sans-serif;
+	font-weight: 400;
+	position: relative;
+}
+
+#u1792,#u1794,#u1796
+{
+	background-color: transparent;
+	position: relative;
+}
+

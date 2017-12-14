@@ -1,0 +1,106 @@
+/* font-family: "Pollock" */
+@font-face {
+	font-family: 'Pollock';
+	src: local('Pollock'), local('Pollock Regular'),
+		url('Pollock/Pollock.woff2') format('woff2'),
+		url('Pollock/Pollock.woff') format('woff'),
+		url('Pollock/Pollock.ttf') format('ttf'),
+		url('Pollock/Pollock.eot') format('eot');
+	font-style: normal;
+	font-weight: normal;
+}
+/* font-family: "StyloBold" */
+@font-face {
+	font-family: 'StyloBold';
+	src: local('StyloBold'), local('Stylo Bold'),
+		url('StyloBold/StyloBold.woff2') format('woff2'),
+		url('StyloBold/StyloBold.woff') format('woff'),
+		url('StyloBold/StyloBold.ttf') format('ttf'),
+		url('StyloBold/StyloBold.eot') format('eot');
+	font-style: normal;
+	font-weight: normal;
+}
+/* font-family: "Revue" */
+@font-face {
+	font-family: 'Revue';
+	src: local('Revue'), local('Revue Normal'),
+		url('Revue/Revue.woff2') format('woff2'),
+		url('Revue/Revue.woff') format('woff'),
+		url('Revue/Revue.ttf') format('ttf'),
+		url('Revue/Revue.eot') format('eot');
+	font-style: normal;
+	font-weight: normal;
+}
+/* font-family: "Revue" */
+@font-face {
+	font-family: 'Derby';
+	src: local('Derby'),
+		url('Derby/Derby.woff2') format('woff2'),
+		url('Derby/Derby.woff') format('woff'),
+		url('Derby/Derby.ttf') format('ttf'),
+		url('Derby/Derby.eot') format('eot');
+	font-style: normal;
+	font-weight: normal;
+}
+/* font-family: "Revue" */
+@font-face {
+	font-family: 'AgZeppelin';
+	src: local('AgZeppelin'), 
+		url('AgZeppelin/AgZeppelin.woff2') format('woff2'),
+		url('AgZeppelin/AgZeppelin.woff') format('woff'),
+		url('AgZeppelin/AgZeppelin.ttf') format('ttf'),
+		url('AgZeppelin/AgZeppelin.eot') format('eot');
+	font-style: normal;
+	font-weight: normal;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* font-family: "Casper" */
+@font-face {
+	font-family: 'Casper';
+	src: local('Casper'), local('Casper-Regular'),
+		url('Casper/Casper.woff2') format('woff2'),
+		url('Casper/Casper.woff') format('woff'),
+		url('Casper/Casper.ttf') format('ttf'),
+		url('Casper/Casper.eot') format('eot');
+	font-style: normal;
+	font-weight: normal;
+}
+/* font-family: "CasperBold" */
+@font-face {
+	font-family: 'CasperBold';
+	src: local('Casper Bold'), local('Casper-Bold'),
+		url('CasperBold/CasperBold.woff2') format('woff2'),
+		url('CasperBold/CasperBold.woff') format('woff'),
+		url('CasperBold/CasperBold.ttf') format('ttf'),
+		url('CasperBold/CasperBold.eot') format('eot');
+	font-style: normal;
+	font-weight: normal;
+}
+/* font-family: "CasperItalic" */
+@font-face {
+	font-family: 'CasperItalic';
+	src: local('Casper Italic'), local('Casper-Italic'),
+		url('CasperItalic/CasperItalic.woff2') format('woff2'),
+		url('CasperItalic/CasperItalic.woff') format('woff'),
+		url('CasperItalic/CasperItalic.ttf') format('ttf'),
+		url('CasperItalic/CasperItalic.eot') format('eot');
+	font-style: normal;
+	font-weight: normal;
+}

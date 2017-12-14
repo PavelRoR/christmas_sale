@@ -1,0 +1,99 @@
+#pay_table {
+	border-collapse: collapse;
+}
+
+#pay_table th:first-child {
+	color: #41434C;
+	font-size: 36px;
+	line-height: 43px;
+	letter-spacing: -1px;
+	font-family: ubuntu, sans-serif;
+	font-weight: 700;
+	background-color: transparent
+}
+
+#pay_table th:last-child {
+	z-index: 1185;
+	width: 132px;
+	min-height: 61px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #7F7F7F;
+	background-color: #F2F2F2;
+	font-size: 22px;
+	line-height: 65px;
+	letter-spacing: 0px;
+	color: #41434C;
+	text-align: center;
+	font-family: ubuntu, sans-serif;
+	font-weight: 700;
+}
+
+#pay_table td {
+	padding: 10px 20px;
+	border: 1px solid #E5E5E5
+}
+
+#pay_table td:first-child {
+	z-index: 953;
+	width: 519px;
+	min-height: 41px;
+	background-color: #F9F9F9;
+	color: #41434C;
+	font-size: 16px;
+	line-height: 19px;
+	font-family: ubuntu, sans-serif;
+	font-weight: 400;
+
+}
+#pay_table td:last-child {
+
+	background-color: #fff;
+
+
+}
+
+#pay_table .bonus {
+	color: #000000;
+	font-size: 22px;
+	line-height: 31px;
+	font-family: ubuntu, sans-serif;
+	font-weight: 400;
+}
+
+#pay_table #price {
+	color: #41434C;
+	font-size: 24px;
+	text-align: center;
+	line-height: 29px;
+	font-family: ubuntu, sans-serif;
+	font-weight: 400;
+	padding: 10px 20px
+}
+
+#pay_table td.transp {
+	background-color: transparent;
+	border: 0;
+}
+
+#pay_table td.transp + td {
+	padding: 0;
+}
+
+#price_link {
+	background-color: #22B573;
+	height: 100%;
+	width: 100%;
+	color: #fff;
+	display: block;
+	text-align: center;
+	line-height: 42px;
+	font-size: 18px;
+	font-family: ubuntu, sans-serif;
+	font-weight: 900;
+	text-decoration: none
+}
+
+#price_link:hover {
+	background-color: #006837
+}

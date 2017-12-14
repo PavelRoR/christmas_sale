@@ -1,0 +1,55 @@
+/* font-family: "BenderLight"; */
+@font-face {
+	font-family: "BenderLight";
+	src: local('Bender Light'), local('Bender-Light'),
+		url("BenderLight/BenderLight.woff2") format("woff2"),
+		url("BenderLight/BenderLight.woff") format("woff"),
+		url("BenderLight/BenderLight.ttf") format("ttf"),
+		url("BenderLight/BenderLight.eot")format("eot");
+	font-style: normal;
+	font-weight: normal;
+}
+/* font-family: "BenderLightItalic"; */
+@font-face {
+	font-family: "BenderLightItalic";
+	src: local('Bender Light Italic'), local('Bender-Light-Italic'),
+		url("BenderLightItalic/BenderLightItalic.woff2") format("woff2"),
+		url("BenderLightItalic/BenderLightItalic.woff") format("woff"),
+		url("BenderLightItalic/BenderLightItalic.ttf") format("ttf"),
+		url("BenderLightItalic/BenderLightItalic.eot")format("eot");
+	font-style: normal;
+	font-weight: normal;
+}
+/* font-family: "BenderBold"; */
+@font-face {
+	font-family: "BenderBold";
+	src: local('Bender Bold'), local('Bender-Bold'),
+		url("BenderBold/BenderBold.woff2") format("woff2"),
+		url("BenderBold/BenderBold.woff") format("woff"),
+		url("BenderBold/BenderBold.ttf") format("ttf"),
+		url("BenderBold/BenderBold.eot")format("eot");
+	font-style: normal;
+	font-weight: normal;
+}
+/* font-family: "BenderBlack"; */
+@font-face {
+	font-family: "BenderBlack";
+	src: local('Bender Black'), local('Bender-Black'),
+		url("BenderBlack/BenderBlack.woff2") format("woff2"),
+		url("BenderBlack/BenderBlack.woff") format("woff"),
+		url("BenderBlack/BenderBlack.ttf") format("ttf"),
+		url("BenderBlack/BenderBlack.eot")format("eot");
+	font-style: normal;
+	font-weight: normal;
+}
+/* font-family: "BenderRegular"; */
+@font-face {
+	font-family: "BenderRegular";
+	src: local('Bender Regular'), local('Bender-Regular'), local('Bender'), local('Bender Normal'),
+		url("BenderRegular/BenderRegular.woff2") format("woff2"),
+		url("BenderRegular/BenderRegular.woff") format("woff"),
+		url("BenderRegular/BenderRegular.ttf") format("ttf"),
+		url("BenderRegular/BenderRegular.eot")format("eot");
+	font-style: normal;
+	font-weight: normal;
+}
