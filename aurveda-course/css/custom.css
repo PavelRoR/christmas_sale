@@ -1,0 +1,53 @@
+#detox section,
+#bonus section {
+    padding-top: 80px;
+}
+
+#detox .author__photo {
+    outline: none;
+}
+
+#detox .why__item {
+    height: 300px;
+}
+
+#detox .reference__video {
+	display: flex;
+	width: 100%;
+	height: auto;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+#detox .reference__video-item {
+	width: 560px;
+	height: 315px;
+	margin: 20px auto;
+}
+
+#bonus .program__item.bonus {
+    color: #484747;
+    padding: 30px 40px;
+}
+
+#bonus .program__item.bonus .program__item-title {
+    text-align: center;
+}
+
+#bonus .program__item.bonus .program__item-title h6 {
+    text-transform: uppercase;
+    color: #484747;
+}
+
+#bonus .program__item.bonus ul {
+    display: block;
+    color: #fca826;
+    padding-left: 30px;
+}
+
+#bonus .program__item {
+    width: 80%;
+    margin: 30px auto;
+    float: none;
+}

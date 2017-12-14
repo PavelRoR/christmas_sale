@@ -1,0 +1,53 @@
+/* font-family: "BenderLight"; */
+@font-face {
+	font-family: "BenderLight";
+	src: url("BenderLight/BenderLight.eot");
+	src: url("BenderLight/BenderLight.eot?#iefix")format("embedded-opentype"),
+		url("BenderLight/BenderLight.woff") format("woff"),
+		url("BenderLight/BenderLight.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+/* font-family: "BenderBold"; */
+@font-face {
+	font-family: "BenderBold";
+	src: url("BenderBold/BenderBold.eot");
+	src: url("BenderBold/BenderBold.eot?#iefix")format("embedded-opentype"),
+		url("BenderBold/BenderBold.woff") format("woff"),
+		url("BenderBold/BenderBold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+/* font-family: "BenderBlack"; */
+@font-face {
+	font-family: "BenderBlack";
+	src: url("BenderBlack/BenderBlack.eot");
+	src: url("BenderBlack/BenderBlack.eot?#iefix")format("embedded-opentype"),
+		url("BenderBlack/BenderBlack.woff") format("woff"),
+		url("BenderBlack/BenderBlack.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+/* font-family: "BenderRegular"; */
+@font-face {
+	font-family: "BenderRegular";
+	src: url("BenderRegular/BenderRegular.eot");
+	src: url("BenderRegular/BenderRegular.eot?#iefix")format("embedded-opentype"),
+		url("BenderRegular/BenderRegular.woff") format("woff"),
+		url("BenderRegular/BenderRegular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+/* font-family: "BenderLightItalic"; */
+@font-face {
+	font-family: "BenderLightItalic";
+	src: url("BenderLightItalic/BenderLightItalic.eot");
+	src: url("BenderLightItalic/BenderLightItalic.eot?#iefix")format("embedded-opentype"),
+		url("BenderLightItalic/BenderLightItalic.woff") format("woff"),
+		url("BenderLightItalic/BenderLightItalic.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
