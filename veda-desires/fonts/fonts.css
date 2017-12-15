@@ -1,0 +1,54 @@
+@font-face {
+	font-family: "Roboto";
+	src: url("RobotoRegular/RobotoRegular.eot");
+	src: url("RobotoRegular/RobotoRegular.eot?#iefix")format("embedded-opentype"),
+		url("RobotoRegular/RobotoRegular.woff") format("woff"),
+		url("RobotoRegular/RobotoRegular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "RobotoLight";
+	src: url("RobotoLight/RobotoLight.eot");
+	src: url("RobotoLight/RobotoLight.eot?#iefix")format("embedded-opentype"),
+		url("RobotoLight/RobotoLight.woff") format("woff"),
+		url("RobotoLight/RobotoLight.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "RobotoMedium";
+	src: url("RobotoMedium/RobotoMedium.eot");
+	src: url("RobotoMedium/RobotoMedium.eot?#iefix")format("embedded-opentype"),
+		url("RobotoMedium/RobotoMedium.woff") format("woff"),
+		url("RobotoMedium/RobotoMedium.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "RobotoBold";
+	src: url("RobotoBold/RobotoBold.eot");
+	src: url("RobotoBold/RobotoBold.eot?#iefix")format("embedded-opentype"),
+		url("RobotoBold/RobotoBold.woff") format("woff"),
+		url("RobotoBold/RobotoBold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "YanoneKaffeesatz";
+	src: url("YanoneKaffeesatz/YanoneKaffeesatz.eot");
+	src: url("YanoneKaffeesatz/YanoneKaffeesatz.eot?#iefix")format("embedded-opentype"),
+		url("YanoneKaffeesatz/YanoneKaffeesatz.woff") format("woff"),
+		url("YanoneKaffeesatz/YanoneKaffeesatz.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "YanoneKaffeesatzBold";
+	src: url("YanoneKaffeesatzBold/YanoneKaffeesatzBold.eot");
+	src: url("YanoneKaffeesatzBold/YanoneKaffeesatzBold.eot?#iefix")format("embedded-opentype"),
+		url("YanoneKaffeesatzBold/YanoneKaffeesatzBold.woff") format("woff"),
+		url("YanoneKaffeesatzBold/YanoneKaffeesatzBold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
