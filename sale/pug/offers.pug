@@ -1,0 +1,61 @@
+mixin offer(href, h4, author, old_price,new_price,more,buy)
+    .offer_wrapper
+        .offer_inner
+            img(src= href, alt= h4)
+            h4= h4
+            p.author Автор 
+                span= author
+            .prices
+                span.old_price
+                    del= old_price
+                span.offer_price= new_price
+    .offer_links
+        .buy
+            a.button(href= buy, target="_blank") Купить
+        .more
+            a(href= more, target="_blank") Подробнее
+section#offers
+    img.ribbon(src="img/ribbon.png", alt="Упаковочная лента")
+    .container
+        h3 В распродаже участвуют:
+        img.divider(src="img/green_divider.png", alt="Разделитель")
+        .row
+            .col-md-3
+                +offer('img/pic_1.jpg','Магия отношений, здоровья и денег','Ольга Веда','7 900р.', '4 900р.','http://mastervision.su/christmas_sale/olgaveda-trening/','https://aleksandrkudryashov1.autoweboffice.ru/?r=ordering/cart/as1&id=1468&clean=true&lg=ru ')
+            .col-md-3
+                +offer('img/pic_2.jpg','Магия отношений','Ольга Веда','6 900р.','4 900р.','https://mastervision.su/christmas_sale/woman-trening ','https://aleksandrkudryashov1.autoweboffice.ru/?r=ordering/cart/as1&id=1469&clean=true&lg=ru')
+            .col-md-3
+                +offer('img/pic_3.jpg','Основы магии','Ольга Веда','14 900р.','4 900р.','https://mastervision.su/christmas_sale/veda-magia','https://aleksandrkudryashov1.autoweboffice.ru/?r=ordering/cart/as1&id=1471&clean=true&lg=ru')
+            .col-md-3
+                +offer('img/pic_4.jpg','Символика в картах Таро','София Вюрстлин','8 960р.' ,'4 900р.','https://mastervision.su/christmas_sale/tarot-simbolica', 'https://aleksandrkudryashov1.autoweboffice.ru/?r=ordering/cart/as1&id=1472&clean=true&lg=ru')
+        .row
+            .col-md-3
+                +offer('img/pic_5.jpg','Нумерология','Ольга Герасимова','10 700р.','4 900р.','https://mastervision.su/christmas_sale/numerology-trening/','https://aleksandrkudryashov1.autoweboffice.ru/?r=ordering/cart/as1&id=1473&clean=true&lg=ru')
+            .col-md-3
+                +offer('img/pic_12.jpg','Гипноз и медитации','Виктор Толстиков','12 400р.','4 900р.','https://mastervision.su/christmas_sale/gipno-praktikum','https://aleksandrkudryashov1.autoweboffice.ru/?r=ordering/cart/as1&id=1474&clean=true&lg=ru')
+            .col-md-3
+                +offer('img/pic_6.jpg','Деревенская Магия','Виктор Толстиков','12 400р.','4 900р.','https://mastervision.su/christmas_sale/magic-praktikum','https://aleksandrkudryashov1.autoweboffice.ru/?r=ordering/cart/as1&id=1475&clean=true&lg=ru')
+            .col-md-3
+                +offer('img/pic_7.jpg','Опыт решётки','Оксана Халваши','16 500р.','4 900р.','https://mastervision.su/christmas_sale/balancing-course','https://aleksandrkudryashov1.autoweboffice.ru/?r=ordering/cart/as1&id=1476&clean=true&lg=ru')
+        .row
+            .col-md-3
+                +offer('img/pic_8.jpg','Таро для жизни','Елизавета Левина','11 900р.','4 900р.','https://mastervision.su/christmas_sale/taropsi-course','https://aleksandrkudryashov1.autoweboffice.ru/?r=ordering/cart/as1&id=1478&clean=true&lg=ru')
+            .col-md-3
+                +offer('img/pic_9.jpg','Метафорические ассоциативные карты','Ольга Потемкина','11 900р.','4 900р.','https://mastervision.su/christmas_sale/metacards-course','https://aleksandrkudryashov1.autoweboffice.ru/?r=ordering/cart/as1&id=1477&clean=true&lg=ru')
+            .col-md-3
+                +offer('img/pic_10.jpg','Третий глаз. Открытие и использование','Василий Попов ','14 400р.','4 900р.','https://mastervision.su/christmas_sale/open-eye-course','https://aleksandrkudryashov1.autoweboffice.ru/?r=ordering/cart/as1&id=1479&clean=true&lg=ru')
+            .col-md-3
+                +offer('img/','Правильное питание по Аюрведе','Роман Лихачев','3 900р.','1 950р.','http://mastervision.su/christmas_sale/aurveda-course/','https://aleksandrkudryashov1.autoweboffice.ru/?r=ordering/cart/as1&id=1482&clean=true&lg=ru ')
+        .row
+            .col-md-3
+                +offer('img/','Детокс и похудение по Аюрведе. Практическое руководство','Роман Лихачев ','5 900р.','2 950р.','http://mastervision.su/christmas_sale/aurveda-course/detox.html','https://aleksandrkudryashov1.autoweboffice.ru/?r=ordering/cart/as1&id=1483&clean=true&lg=ru')
+            .col-md-3
+                +offer('img/','Специи. Сила Аюрведы!','Роман Лихачев','6 500р.','3 250р.','http://mastervision.su/christmas_sale/aurveda-course/spices.html', 'https://aleksandrkudryashov1.autoweboffice.ru/?r=ordering/cart/as1&id=1484&clean=true&lg=ru')
+            .col-md-3
+                +offer('img/','Курс "Бодрость тела и духа!" Чаи из трав и специй. Аюрведа','Роман Лихачев','3 900р.','1 950р.','https://mastervision.su/christmas_sale/aurveda-course/tea.html', 'https://aleksandrkudryashov1.autoweboffice.ru/?r=ordering/cart/as1&id=1481&clean=true&lg=ru ')
+            .col-md-3
+                +offer('img/','Астрология. Учимся управлять своей реальностью','Лидия Сурина','11 900р.','4 900р.','http://mastervision.su/christmas_sale/astrological-course/', 'https://aleksandrkudryashov1.autoweboffice.ru/?r=ordering/cart/as1&id=1480&clean=true&lg=ru ')
+        .row
+            .col-md-12
+                +offer('img/','','','','','', '')
+        
