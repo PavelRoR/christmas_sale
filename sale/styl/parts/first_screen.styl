@@ -1,0 +1,56 @@
+#main_screen
+	background-image: url(../img/first_screen_bg.jpg)
+	background-position: top center 
+	background-repeat: no-repeat
+	background-size: cover
+	width 100%
+	padding: 20px 0 70px
+	position: relative
+	// &:after
+	// 	content: '';
+	// 	width: 100%;
+	// 	height: 100%;
+	// 	background-image: url(../img/snow.gif)
+	// 	background-position: center
+	// 	background-repeat: repeat
+	// 	position: absolute;
+	// 	top: 0;
+	// 	left: 0;
+	// 	right: 0;
+	// 	z-index: 0
+	.container
+		position: relative
+#sale_ball
+	position: absolute;
+	top: -20px;
+	right: 142px;
+	animation: rock
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+#logo
+	float: left
+.contacts
+	float: right
+	text-align: right
+	.fa
+		color: #fe5946
+		font-size: 18px
+		margin-left: 40px
+		&:.fa-phone
+			margin-left: 0
+	.fa+span
+		font-size: 18px;
+		font-family: "Open Sans";
+		color: #fcfafa
+		font-weight: bold;
+		line-height: 26px
+		text-align: right;
+		padding-left: 15px
+#offer
+	display: block
+	margin: 120px auto 0
+
+h2+img
+	display: block
+	margin: 25px auto 0

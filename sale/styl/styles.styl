@@ -47,3 +47,37 @@
 		 url('../fonts/RobotoBoldCondensed.ttf') format('truetype'),
 		 url('../fonts/RobotoBoldCondensed.svg#RobotoBoldCondensed') format('svg');
 }
+
+h2
+	font-size: 29px;
+	font-family: "RobotoBoldCondensed", sans-serif;
+	color: #fff
+	text-transform: uppercase;
+	line-height: 0.822;
+	text-align: center;
+	text-shadow: 2.5px 4.33px 10px rgba(0, 0, 0, 0.75);
+	-moz-transform: matrix( 1.16467062056079,0,0,1.16393442622951,0,0);
+	-webkit-transform: matrix( 1.16467062056079,0,0,1.16393442622951,0,0);
+	-ms-transform: matrix( 1.16467062056079,0,0,1.16393442622951,0,0);
+
+h3
+	font-size: 40px;
+	font-family: "RobotoSlabBold", sans-serif;
+	color: rgb(58, 57, 57);
+	font-weight: bold;
+	line-height: 0.6;
+	text-align: center;
+	margin: 190px 0 10px
+
+@import 'parts/first_screen'
+
+@keyframes rock
+	0%
+		transform: rotate(10deg);
+		transform-origin: 70px 0;
+	50%
+		transform: rotate(-10deg);
+		transform-origin: 70px 0;
+	100%
+		transform: rotate(10deg);
+		transform-origin: 70px 0;
