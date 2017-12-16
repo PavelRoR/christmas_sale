@@ -68,7 +68,14 @@ h3
 	line-height: 0.6;
 	text-align: center;
 	margin: 190px 0 10px
-
+a
+	text-decoration: none
+	outline: 0;
+	&:hover
+	&:focus
+		color #ffffff
+		outline: 0
+		text-decoration: none
 #ribbon
 	display: block;
 	width: 100%;
@@ -77,10 +84,27 @@ h3
 	left: 0;
 	right: 0;
 
+.button
+	display block
+	font-size: 20px;
+	font-family: "RobotoSlabBold", sans-serif;
+	color: #fefefd
+	line-height: 3
+	text-align: center;
+	border 1px solid #3b8d3a
+	border-radius: 5px;
+	background-image: linear-gradient(to top, #164216 0%, #47aa46 100%);
+	width: 369px;
+	height: 59px;
+	box-shadow: 0 0 6% 7px rgba(#ffffbe, .35) inset
+	margin: 30px auto
+	&:hover
+		background-image: linear-gradient(to bottom, #164216 0%, #47aa46 100%);
 
 
 @import 'parts/first_screen'
 @import 'parts/second_screen'
+@import 'parts/footer'
 
 @keyframes rock
 	0%
