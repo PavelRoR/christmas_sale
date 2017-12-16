@@ -10,10 +10,8 @@ mixin offer(href, h4, author, old_price,new_price,more,buy)
                     del= old_price
                 span.offer_price= new_price
     .offer_links
-        .buy
-            a.button(href= buy, target="_blank") Купить
-        .more
-            a(href= more, target="_blank") Подробнее
+        a.button(href= buy, target="_blank") Купить
+        a(href= more, target="_blank") Подробнее
 section#offers
     img.ribbon(src="img/ribbon.png", alt="Упаковочная лента")
     .container
@@ -45,17 +43,14 @@ section#offers
             .col-md-3
                 +offer('img/pic_10.jpg','Третий глаз. Открытие и использование','Василий Попов ','14 400р.','4 900р.','https://mastervision.su/christmas_sale/open-eye-course','https://aleksandrkudryashov1.autoweboffice.ru/?r=ordering/cart/as1&id=1479&clean=true&lg=ru')
             .col-md-3
-                +offer('img/','Правильное питание по Аюрведе','Роман Лихачев','3 900р.','1 950р.','http://mastervision.su/christmas_sale/aurveda-course/','https://aleksandrkudryashov1.autoweboffice.ru/?r=ordering/cart/as1&id=1482&clean=true&lg=ru ')
+                +offer('img/pic_13.jpg','Правильное питание по Аюрведе','Роман Лихачев','3 900р.','1 950р.','http://mastervision.su/christmas_sale/aurveda-course/','https://aleksandrkudryashov1.autoweboffice.ru/?r=ordering/cart/as1&id=1482&clean=true&lg=ru ')
         .row
             .col-md-3
-                +offer('img/','Детокс и похудение по Аюрведе. Практическое руководство','Роман Лихачев ','5 900р.','2 950р.','http://mastervision.su/christmas_sale/aurveda-course/detox.html','https://aleksandrkudryashov1.autoweboffice.ru/?r=ordering/cart/as1&id=1483&clean=true&lg=ru')
+                +offer('img/pic_15.jpg','Детокс и похудение по Аюрведе','Роман Лихачев ','5 900р.','2 950р.','http://mastervision.su/christmas_sale/aurveda-course/detox.html','https://aleksandrkudryashov1.autoweboffice.ru/?r=ordering/cart/as1&id=1483&clean=true&lg=ru')
             .col-md-3
-                +offer('img/','Специи. Сила Аюрведы!','Роман Лихачев','6 500р.','3 250р.','http://mastervision.su/christmas_sale/aurveda-course/spices.html', 'https://aleksandrkudryashov1.autoweboffice.ru/?r=ordering/cart/as1&id=1484&clean=true&lg=ru')
+                +offer('img/pic_16.jpg','Специи. Сила Аюрведы!','Роман Лихачев','6 500р.','3 250р.','http://mastervision.su/christmas_sale/aurveda-course/spices.html', 'https://aleksandrkudryashov1.autoweboffice.ru/?r=ordering/cart/as1&id=1484&clean=true&lg=ru')
             .col-md-3
-                +offer('img/','Курс "Бодрость тела и духа!" Чаи из трав и специй. Аюрведа','Роман Лихачев','3 900р.','1 950р.','https://mastervision.su/christmas_sale/aurveda-course/tea.html', 'https://aleksandrkudryashov1.autoweboffice.ru/?r=ordering/cart/as1&id=1481&clean=true&lg=ru ')
+                +offer('img/pic_17.jpg','Курс "Бодрость тела и духа!" Чаи из трав и специй. Аюрведа','Роман Лихачев','3 900р.','1 950р.','https://mastervision.su/christmas_sale/aurveda-course/tea.html', 'https://aleksandrkudryashov1.autoweboffice.ru/?r=ordering/cart/as1&id=1481&clean=true&lg=ru ')
             .col-md-3
-                +offer('img/','Астрология. Учимся управлять своей реальностью','Лидия Сурина','11 900р.','4 900р.','http://mastervision.su/christmas_sale/astrological-course/', 'https://aleksandrkudryashov1.autoweboffice.ru/?r=ordering/cart/as1&id=1480&clean=true&lg=ru ')
-        .row
-            .col-md-12
-                +offer('img/','','','','','', '')
+                +offer('img/pic_14.jpg','Астрология. Учимся управлять своей реальностью','Лидия Сурина','11 900р.','4 900р.','http://mastervision.su/christmas_sale/astrological-course/', 'https://aleksandrkudryashov1.autoweboffice.ru/?r=ordering/cart/as1&id=1480&clean=true&lg=ru ')
         
