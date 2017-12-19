@@ -158,7 +158,7 @@ a
 		left: 0
 	.spec_ball.last
 		float: none
-		right: 0
+		right: 10px
 	#snow_line
 		bottom -160px
 	#footer
@@ -188,3 +188,50 @@ a
 		.col-md-3
 			width: 50%
 			float left
+	.offer_wrapper
+		height: 510px
+	.offer_inner .prices
+		display: table
+	 .offer_inner .prices .offer_price, .offer_inner .prices .old_price
+		 display: table-cell
+	.offer_links .button
+		width: 50%
+		float: left;
+		&+a
+			float: right;
+			text-align: right;
+			margin: 15px 15px 0;
+			width: auto
+	#special
+		background-position-y: -30px
+	#snow_line
+		bottom: -100px
+	#footer 
+		height: 290px;
+		p
+			font-size: 18px
+			&:first-child
+				padding-top: 65px;
+				margin-bottom: 15px;
+			&:nth-of-type(3)
+				padding: 15px 0 10px;
+	#spec_logo
+		left: 10px
+@media screen and (max-width: 768px)
+	#sale_ball
+		display: none
+	.sale
+		display: block
+	#letter
+		height: 590px
+		p
+			font-size: 16px
+			max-width: 530px;
+	#green_snow
+		display: none
+	.spec_ball
+		margin-bottom: 10px
+		&.last
+			margin-bottom: 0
+	#snow_line
+		bottom: -75px
