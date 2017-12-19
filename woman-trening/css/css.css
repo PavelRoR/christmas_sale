@@ -957,7 +957,7 @@ a.support-two:focus + .tip-block .tip-two {
 /* параграфы */
 .popup p {margin: 0; padding: 5px 0}
 /*================================Footer=================================*/
-footer{clear: both; background-color: rgb(34, 34, 34); height: 140px; text-align: center; overflow: hidden;}
+footer{clear: both; background-color: rgb(34, 34, 34); height: auto; text-align: center; overflow: hidden;padding: 20px 0;}
 footer h3{font-size: 25px; color: white; padding: 10px 0!important}
 .groupimg{height: 50px;}
 .groupimg>a>img{max-height: 50px; margin: 0 10px;}
@@ -988,4 +988,20 @@ background-color:#f8f7ee; padding-top:30px;
   float:left;
 }
 .comments .container .video:nth-of-type(even){float:right;}
-.comments .container .video span{font-size:18px; font-weight:bold; font-family:Arial; color:#ff5349; margin-top:15px}container
+.comments .container .video span{font-size:18px; font-weight:bold; font-family:Arial; color:#ff5349; margin-top:15px}
+.timer {
+	clear: both;
+	padding: 20px 0;
+}
+.timer h2 {
+	font-size: 24px;
+	text-align: center;
+	font-weight: bold;
+}
+.timer .alert{padding:15px;margin-bottom:20px;border:1px solid transparent;border-radius:4px;text-align:center;font-size: 34px;margin-top: 30px;}.timer .alert-danger{color:#a94442;background-color:#f2dede;border-color:#ebccd1}
+.conditions {
+	padding-top: 40px 0 20px;
+	color: #fff;
+}.conditions + a{
+	color: red;
+}

@@ -15,6 +15,7 @@
     <link rel="appendix" href="/sitemap/"/>
     <title>Рождественская распродажа! Скидки до 70% | Mastervision</title>
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/flipclock.css"/>
     <link rel="stylesheet" href="css/styles.css"/>
   </head>
   <body>
@@ -26,16 +27,20 @@
           </div>
         </header>
         <section id="first_screen"><img id="offer" src="img/offer.png" alt="Акция! Рождественская распродажа!"/>
-          <h2>с 20 декабря по 10 января</h2><img src="img/3_snowys.png" alt="З снежинки"/>
+          <h2 class="sale">Сидки до 70%</h2>
+          <div class="timer">
+            <h4>До завершения акции:</h4>
+            <div class="clock" id="clock_1"></div>
+            <div class="clock-stop"></div>
+          </div><img src="img/3_snowys.png" alt="З снежинки"/>
         </section>
       </div>
     </div>
     <section id="second_screen"><img class="ribbon" src="img/ribbon.png" alt="Упаковочная лента"/>
       <div class="conainer">
         <div id="letter"><img id="bells" src="img/bells.jpg" alt="Колокольчики"/>
-          <p class="red">Наступают самые волшебные, магические и всеми любимые Новый Год и Рождество. В это время все вокруг наполняется чудом обновления и трансформации. И каждый мечтает о том, чтобы следующий год стал самым судьбоносным и принес с собою Счастье, Успех и Изобилие</p><img id="green_snow" src="img/green_snowy.jpg" alt="Снежинка"/>
-          <p>Нашу компанию не обошел стороной дух Рождества и Нового Года. Мы любим делать приятные сюрпризы для вас. И, в связи с приближением этих праздников, мы объявляем ГРАНДИОЗНУЮ РОЖДЕСТВЕНСКУЮ РАСПРОДАЖУ!</p>
-          <p>Теперь вы можете приобрести тренинги своих любимых Учителей по привлекательной цене и использовать эти знания себе во благо, улучшая качество жизни</p><img id="big_tree" src="img/big_tree.png" alt="Ветка ёлочки"/>
+          <p class="red">Приближается самый волшебный, магический и всеми любимый Новый Год. В это время все вокруг наполняется чудом обновления и трансформации. И каждый мечтает о том, чтобы следующий год стал самым судьбоносным и принес с собою Счастье, Успех и Изобилие</p><img id="green_snow" src="img/green_snowy.jpg" alt="Снежинка"/>
+          <p>И, в связи с приближением этого праздника, мы объявляем ГРАНДИОЗНУЮ НОВОГОДНЮЮ РАСПРОДАЖУ! Теперь вы можете приобрести тренинги своих любимых Учителей по привлекательной цене и использовать эти знания себе во благо, улучшая качество жизни</p><img id="big_tree" src="img/big_tree.png" alt="Ветка ёлочки"/>
         </div>
       </div>
     </section>
@@ -226,6 +231,11 @@
                 <div class="offer_links"><a class="button" href="https://aleksandrkudryashov1.autoweboffice.ru/?r=ordering/cart/as1&amp;id=1480&amp;clean=true&amp;lg=ru " target="_blank">Купить</a><a href="http://mastervision.su/christmas_sale/astrological-course/" target="_blank">Подробнее</a></div>
           </div>
         </div>
+        <div class="timer">
+          <h4>До завершения акции:</h4>
+          <div class="clock" id="clock_2"></div>
+          <div class="clock-stop"></div>
+        </div>
       </div>
     </section>
     <section id="special"><img class="ribbon" src="img/ribbon.png" alt="Упаковочная лента"/>
@@ -244,15 +254,19 @@
       <div class="container">
         <p>С наступающими праздниками Вас! Здоровья Вам и Вашим близким! Счастья и Безусловной Любви! Успеха и Реализованности! Благополучия и Процветания!</p>
         <p>Команда MASTERVISION</p>
+        <p>ИП Кудряшов Александр Анатольевич г. Москва, Новокуркинское шоссе, 27 ИНН 720410077658 ОГРН 315723200065100 </p><a class="conditions" href="http://mastervision.su/oferta.docx">Условия возврата денежных средств</a>
       </div>
     </footer>
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/jquery-2.1.1.min.js"><\/script>')</script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/flipclock.min.js"></script>
     <script src="js/scripts.js"></script>
     <script src="https://yastatic.net/browser-updater/v1/script.js"></script>
-    <script>var yaBrowserUpdater = new ya.browserUpdater.init({"lang": "ru", "browsers": {"yabrowser": "15.10", "chrome": "52", "ie": "10", "opera": "40", "safari": "8", "fx": "47", "iron": "35", "flock": "Infinity", "palemoon": "25", "camino": "Infinity", "maxthon": "4.5", "seamonkey": "2.3", "theme": "blue"}});</script><!--Yandex.Metrika counter-->
+    <script>var yaBrowserUpdater = new ya.browserUpdater.init({"lang": "ru", "browsers": {"yabrowser": "15.10", "chrome": "52", "ie": "10", "opera": "40", "safari": "8", "fx": "47", "iron": "35", "flock": "Infinity", "palemoon": "25", "camino": "Infinity", "maxthon": "4.5", "seamonkey": "2.3", "theme": "blue"}});</script><!-- Begin LeadBack code -->
+    <script>var _emv = _emv || [];_emv['campaign'] = '867c51ec0949a1cc34f60545';(function() {var em = document.createElement('script');em.type = 'text/javascript';em.async = true;em.src =('https:' == document.location.protocol ? 'https://' : 'http://') + 'leadback.ru/js/leadback.js';var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(em, s);})();</script><!-- End LeadBack code -->
+<!--Yandex.Metrika counter-->
     <script>(function(d, w, c) {(w[c] = w[c] || []).push(function() {try {w.yaCounter35450015 = new Ya.Metrika({id: 35450015,clickmap: true,trackLinks: true,accurateTrackBounce: true,webvisor: true});} catch (e) {}});var n = d.getElementsByTagName("script")[0],s = d.createElement("script"),f = function() {n.parentNode.insertBefore(s, n);};s.type = "text/javascript";s.async = true;s.src = "https://mc.yandex.ru/metrika/watch.js";if (w.opera == "[object Opera]") {d.addEventListener("DOMContentLoaded", f, false);} else {f();}})(document, window, "yandex_metrika_callbacks");</script>
     <noscript>
       <div><img src="https://mc.yandex.ru/watch/35450015" style="position:absolute; left:-9999px;" alt=""/></div>

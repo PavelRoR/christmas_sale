@@ -5,6 +5,7 @@
 	<meta charset="utf-8">
 	<title>Магия Ольги Веды</title>
 	<!-- core page styles -->
+	<link rel="stylesheet" href="css/flipclock.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/fontello.css">
 	<link rel="stylesheet" href="js/magnific/magnific-popup.css">
@@ -352,13 +353,11 @@
 					
 				</div>
 			</div>
-<!--
-   <div class="center"> 
-  		<br><br>
-   		<h2>Изменение цены через:</h2><br><br>
-	   <script src="http://megatimer.ru/s/88ddaadf9f2b7f977b6c3a507361da91.js"></script>
-	</div>
--->
+<div class="timer">
+                <h2>До конца акции:</h2>
+                <div class="clock"></div>
+                <div class="clock-stop"></div>
+            </div>
 </div>
 	</section>
 	
@@ -459,6 +458,8 @@
 			<div class="groupimg">
 				<div class="soc"> <a href="https://www.facebook.com/Mastervision1C/" target="_blank"><i class="icon-vkontakte"></i></a> <a href="https://vk.com/mv_ezoterika" target="_blank"><i class="icon-facebook"></i></a> <a href="http://ok.ru/mv.ezoterika" target="_blank"><i class="icon-odnoklassniki"></i></a> <a href="https://twitter.com/MastervisionEzo" target="_blank"><i class="icon-instagram"></i></a> <a href="https://www.youtube.com/channel/UCiJTdt19jRMRmYyCZac2Lvg/" target="_blank"><i class="icon-twitter"></i></a> <a href="https://www.instagram.com/mastervision1/" target="_blank"><i class="icon-youtube-play"></i></a> </div>
 			</div>
+			 <p class="conditions">ИП Кудряшов Александр Анатольевич г. Москва, Новокуркинское шоссе, 27 ИНН 720410077658 ОГРН 315723200065100 </p><a href="http://mastervision.su/oferta.docx">Условия возврата денежных средств</a>
+
 		</div>
 		</div>
 	</footer>
@@ -487,11 +488,53 @@
 	</script>
 	<script src="js/vendor.min.js"></script>
 	<script src="js/app.min.js"></script>
+	<script src="js/flipclock.min.js"></script>
 	<!-- Script to Activate the Carousel -->
 	<script>
 		$('.carousel').carousel({
 			interval: 7000 //changes the speed
 		})
+	</script>
+	<script>
+	        /* Таймер */
+    var clock;
+
+    var futureDate = new Date("December 22, 2017 09:00 AM UTC+3");
+    var currentDate = new Date();
+
+
+    var diff = futureDate.getTime() / 1000 - currentDate.getTime() / 1000;
+
+
+    function dayDiff(first, second) {
+        return (second - first) / (1000 * 60 * 60 * 24);
+    }
+
+    if (dayDiff(currentDate, futureDate) < 100) {
+        $('.clock').addClass('twoDayDigits');
+    } else {
+        $('.clock').addClass('threeDayDigits');
+    }
+
+    if (diff < 0) {
+        diff = 0;
+        $('.clock-stop').addClass("alert alert-danger alert-timer");
+        $('.clock-stop').html("Время вышло!");
+
+    }
+
+    // Instantiate a coutdown FlipClock
+    clock = $('.clock').FlipClock(diff, {
+        clockFace: 'HourlyCounter',
+        countdown: true,
+        language: 'ru',
+        callbacks: {
+            stop: function () {
+                $('.clock-stop').addClass("alert alert-danger alert-timer");
+        $('.clock-stop').html("Время вышло!");
+        
+            }
+        },});
 	</script>
 	<div class="tingle-modal" id="politika_conf">
 		<div class="modalochka2">
@@ -522,17 +565,9 @@
 	<!--
 <script src="http://cdnjs.cloudflare.com/ajax/libs/wow/1.0.3/wow.min.js"></script>
 -->
-	<script type='text/javascript'>
-		(function () {
-			var widget_id = 'cMdj5UfoZX';
-			var s = document.createElement('script');
-			s.type = 'text/javascript';
-			s.async = true;
-			s.src = '//code.jivosite.com/script/widget/' + widget_id;
-			var ss = document.getElementsByTagName('script')[0];
-			ss.parentNode.insertBefore(s, ss);
-		})();
-	</script>
+	<!-- Begin LeadBack code -->
+    <script>var _emv = _emv || [];_emv['campaign'] = '867c51ec0949a1cc34f60545';(function() {var em = document.createElement('script');em.type = 'text/javascript';em.async = true;em.src =('https:' == document.location.protocol ? 'https://' : 'http://') + 'leadback.ru/js/leadback.js';var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(em, s);})();</script><!-- End LeadBack code -->
+
 </body>
 
 </html>

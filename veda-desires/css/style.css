@@ -444,16 +444,17 @@ form button:focus {
 
 .footer {
 	width: 100%;
-	height: 285px;
+	height: auto;
 	overflow: hidden;
 	background-color: #276ca3;
 	-webkit-background-size: cover;
 	background-size: cover;
+	padding-bottom: 30px;
 }
 
 .footer p.want {
 	display: block;
-	margin: 140px auto 30px;
+	margin: 40px auto ;
 	font-family: "YanoneKaffeesatz", sans-serif;
 	font-size: 2rem;
 	letter-spacing: .5px;
@@ -1026,6 +1027,26 @@ z-index: 1;
 }
 .carousel-caption .btn {
   text-shadow: none;
+}
+.timer {
+	text-align: center;
+}
+.clock {
+	width: 100%;
+	padding: 10px 0;
+}
+.timer .alert{padding:15px;margin-bottom:20px;border:1px solid transparent;border-radius:4px;text-align:center;font-size: 34px;margin-top: 30px;}.timer .alert-danger{color:#a94442;background-color:#f2dede;border-color:#ebccd1}
+.flip-clock-divider .flip-clock-label {
+	color: #fff !important;
+}
+.conditions {
+	text-align: center;
+	padding: 10px 0;
+}
+.conditions + a {
+	color: #aaa;
+	display: block;
+	text-align: center;
 }
 @media screen and (min-width: 768px) {
   .carousel-control .glyphicon-chevron-left,

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
+    <link rel="stylesheet" href="css/flipclock.css">
     <link rel="stylesheet" href="css/css.css">
     <link rel="stylesheet" href="css/fontello.css">
     <link rel="stylesheet" href="css/style.css">
@@ -90,7 +91,11 @@
         
       </div> 
     </div> 
-    
+    <div class="timer">
+                <h2>До конца акции:</h2>
+                <div class="clock"></div>
+                <div class="clock-stop"></div>
+            </div>
   </div> 
 </div> 
 <div class="forwhom"> 
@@ -517,179 +522,57 @@ $(function() {
 
   });
 </script> <!--HTML Widget code-->
+ <footer>
+ 	 <p class="conditions">ИП Кудряшов Александр Анатольевич г. Москва, Новокуркинское шоссе, 27 ИНН 720410077658 ОГРН 315723200065100 </p><a href="http://mastervision.su/oferta.docx">Условия возврата денежных средств</a>
+
+ </footer>
   
-		
-<script type="text/javascript">(function($){
-	
-	// Number of seconds in every time division
-	var days	= 24*60*60,
-		hours	= 60*60,
-		minutes	= 60;
-	
-	// Creating the plugin
-	$.fn.countdown = function(prop){
-		
-		var options = $.extend({
-			callback	: function(){},
-			timestamp	: 0
-		},prop);
-		
-		var left, d, h, m, s, positions;
+		<script src="js/flipclock.min.js"></script>
+		<script>
+	        /* Таймер */
+    var clock;
 
-		// Initialize the plugin
-		init(this, options);
-		
-		positions = this.find('.position');
-		
-		(function tick(){
-			
-			// Time left
-			left = Math.floor((options.timestamp - (new Date())) / 1000);
-			
-			if(left < 0){
-				left = 0;
-			}
-			
-			// Number of days left
-			d = Math.floor(left / days);
-			updateDuo(0, 1, d);
-			left -= d*days;
-			
-			// Number of hours left
-			h = Math.floor(left / hours);
-			updateDuo(2, 3, h);
-			left -= h*hours;
-			
-			// Number of minutes left
-			m = Math.floor(left / minutes);
-			updateDuo(4, 5, m);
-			left -= m*minutes;
-			
-			// Number of seconds left
-			s = left;
-			updateDuo(6, 7, s);
-			
-			// Calling an optional user supplied callback
-			options.callback(d, h, m, s);
-			
-			// Scheduling another call of this function in 1s
-			setTimeout(tick, 1000);
-		})();
-		
-		// This function updates two digit positions at once
-		function updateDuo(minor,major,value){
-			switchDigit(positions.eq(minor),Math.floor(value/10)%10);
-			switchDigit(positions.eq(major),value%10);
-		}
-		
-		return this;
-	};
+    var futureDate = new Date("December 22, 2017 09:00 AM UTC+3");
+    var currentDate = new Date();
 
 
-	function init(elem, options){
-		elem.addClass('countdownHolder');
+    var diff = futureDate.getTime() / 1000 - currentDate.getTime() / 1000;
 
-		// Creating the markup inside the container
-		$.each(['Days','Hours','Minutes','Seconds'],function(i){
-			$('<span class="count'+this+'">').html(
-				'<span class="position">\
-					<span class="digit static">0</span>\
-				</span>\
-				<span class="position">\
-					<span class="digit static">0</span>\
-				</span>'
-			).appendTo(elem);
-			
-			if(this!="Seconds"){
-				elem.append('<span class="countDiv countDiv'+i+'"></span>');
-			}
-		});
 
-	}
+    function dayDiff(first, second) {
+        return (second - first) / (1000 * 60 * 60 * 24);
+    }
 
-	// Creates an animated transition between the two numbers
-	function switchDigit(position,number){
-		
-		var digit = position.find('.digit')
-		
-		if(digit.is(':animated')){
-			return false;
-		}
-		
-		if(position.data('digit') == number){
-			// We are already showing this number
-			return false;
-		}
-		
-		position.data('digit', number);
-		
-		var replacement = $('<span>',{
-			'class':'digit',
-			css:{
-				top:'-2.1em',
-				opacity:0
-			},
-			html:number
-		});
-		
-		// The .static class is added when the animation
-		// completes. This makes it run smoother.
-		
-		digit
-			.before(replacement)
-			.removeClass('static')
-			.animate({top:'2.5em',opacity:0},'fast',function(){
-				digit.remove();
-			})
+    if (dayDiff(currentDate, futureDate) < 100) {
+        $('.clock').addClass('twoDayDigits');
+    } else {
+        $('.clock').addClass('threeDayDigits');
+    }
 
-		replacement
-			.delay(100)
-			.animate({top:0,opacity:1},'fast',function(){
-				replacement.addClass('static');
-			});
-	}
-})(jQuery);
-</script> 
-<script type="text/javascript">$(function(){
-	
-	var note = $('#note'),
-		ts = new Date(2015, 11-1, 22),
-		newYear = true;
-	
-	if((new Date()) > ts){
-		// The new year is here! Count towards something else.
-		// Notice the *1000 at the end - time must be in milliseconds
-		ts = (new Date()).getTime() + 0*0*00*00*1000;
-		newYear = false;
-	}
-		
-	$('#countdown').countdown({
-		timestamp	: ts,
-		callback	: function(days, hours, minutes, seconds){
-			
-			var message = "";
-			
-			message += days + " day" + ( days==1 ? '':'s' ) + ", ";
-			message += hours + " hour" + ( hours==1 ? '':'s' ) + ", ";
-			message += minutes + " minute" + ( minutes==1 ? '':'s' ) + " and ";
-			message += seconds + " second" + ( seconds==1 ? '':'s' ) + " <br />";
-			
-			if(newYear){
-				message += "left until the new year!";
-			}
-			else {
-				message += "left to 10 days from now!";
-			}
-			
-			note.html(message);
-		}
-	});
-	
-});
-</script>        <!-- BEGIN JIVOSITE CODE {literal} -->
-<script type="text/javascript">(function(){ var widget_id = 'cMdj5UfoZX';
-var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = '//code.jivosite.com/script/widget/'+widget_id; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);})();
-</script><!-- {/literal} END JIVOSITE CODE -->
+    if (diff < 0) {
+        diff = 0;
+        $('.clock-stop').addClass("alert alert-danger alert-timer");
+        $('.clock-stop').html("Время вышло!");
+
+    }
+
+    // Instantiate a coutdown FlipClock
+    clock = $('.clock').FlipClock(diff, {
+        clockFace: 'HourlyCounter',
+        countdown: true,
+        language: 'ru',
+        callbacks: {
+            stop: function () {
+                $('.clock-stop').addClass("alert alert-danger alert-timer");
+        $('.clock-stop').html("Время вышло!");
+        
+            }
+        },});
+	</script>
+
+     <!-- Begin LeadBack code -->
+    <script>var _emv = _emv || [];_emv['campaign'] = '867c51ec0949a1cc34f60545';(function() {var em = document.createElement('script');em.type = 'text/javascript';em.async = true;em.src =('https:' == document.location.protocol ? 'https://' : 'http://') + 'leadback.ru/js/leadback.js';var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(em, s);})();</script><!-- End LeadBack code -->
+
         <!-- Yandex.Metrika counter -->
 <script type="text/javascript">(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter31605918 = new Ya.Metrika({ id:31605918, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");
 </script><noscript>&lt;div&gt;&lt;img src="https://mc.yandex.ru/watch/31605918" style="position:absolute; left:-9999px;" alt="" /&gt;&lt;/div&gt;</noscript><!-- /Yandex.Metrika counter -->

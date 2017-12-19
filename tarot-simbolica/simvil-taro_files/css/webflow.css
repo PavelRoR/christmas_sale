@@ -1472,6 +1472,15 @@ textarea.w-select {
 .w-nav[data-collapse="all"] .w-nav-button {
   display: block;
 }
+footer {
+	background-color: #eee;
+	text-align: center;
+	padding: 10px 0;
+}
+.timer .alert{padding:15px;margin-bottom:20px;border:1px solid transparent;border-radius:4px;text-align:center;font-size: 34px;margin-top: 30px;}.timer .alert-danger{color:#a94442;background-color:#f2dede;border-color:#ebccd1}
+.clock ul li  {
+	list-style: none;
+}
 @media screen and (max-width: 991px) {
   .w-nav[data-collapse="medium"] .w-nav-menu {
     display: none;

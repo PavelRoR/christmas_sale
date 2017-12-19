@@ -3171,6 +3171,14 @@ footer .container .soc__button a:hover
 #price {
 	padding-top: 40px;
 }
+
+.timer .alert{padding:15px;margin-bottom:20px;border:1px solid transparent;border-radius:4px;text-align:center;font-size: 34px;margin-top: 30px;}.timer .alert-danger{color:#a94442;background-color:#f2dede;border-color:#ebccd1}
+.conditions {
+	margin-top: 5px;
+}
+.conditions + a{
+	color: blue
+}
 @media screen and (min-width: 1800px)
 {
     html

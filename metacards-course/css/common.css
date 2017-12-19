@@ -4193,6 +4193,14 @@ footer .container .soc__button a:hover
     -webkit-box-shadow: 0 0 5px 0 rgba(0,0,0,.3);
             box-shadow: 0 0 5px 0 rgba(0,0,0,.3);
 }
+.bx-viewport {
+	height: 659px !important;
+}
+
+.timer .alert{padding:15px;margin-bottom:20px;border:1px solid transparent;border-radius:4px;text-align:center;font-size: 34px;margin-top: 30px;}.timer .alert-danger{color:#a94442;background-color:#f2dede;border-color:#ebccd1}
+	.conditions + a {
+		color:red;
+}
 @media screen and (min-width: 1600px)
 {
     html

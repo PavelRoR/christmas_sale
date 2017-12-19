@@ -1132,6 +1132,15 @@ MODAL
 .carousel-caption .btn {
   text-shadow: none;
 }
+.timer {
+	text-align: center;
+}
+.timer .alert{padding:15px;margin-bottom:20px;border:1px solid transparent;border-radius:4px;text-align:center;font-size: 34px;margin-top: 30px;}.timer .alert-danger{color:#a94442;background-color:#f2dede;border-color:#ebccd1}
+.conditions,
+.conditions + a {
+	text-align: center;
+	display: block;
+}
 @media screen and (min-width: 768px) {
   .carousel-control .glyphicon-chevron-left,
   .carousel-control .glyphicon-chevron-right,

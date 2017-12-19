@@ -1813,3 +1813,18 @@ footer .soc i:hover{
 	transform: scale(1) translateX(0px) translateY(0px) rotate(0deg);
 	opacity: 1;
 }
+.timer {
+	clear: both;
+	padding-top: 30px;
+}
+.timer .alert{padding:15px;margin-bottom:20px;border:1px solid transparent;border-radius:4px;text-align:center;font-size: 34px;margin-top: 30px;}.timer .alert-danger{color:#a94442;background-color:#f2dede;border-color:#ebccd1}
+.conditions {
+	clear: both;
+	text-align: center;
+
+}
+.conditions + a {
+	color: red;
+	text-align: center;
+	display: block;
+}

@@ -1406,3 +1406,20 @@ footer a img{max-height: 50px; margin: 0 10px;}
 #rh-badge {
 	display: none !important;
 }
+.timer {
+	clear: both;
+	padding-top: 40px;
+}
+.timer h2 {
+	font-size: 24px;
+	font-weight: bold;
+	text-align: center;
+}
+.timer .alert{padding:15px;margin-bottom:20px;border:1px solid transparent;border-radius:4px;text-align:center;font-size: 34px;margin-top: 30px;}.timer .alert-danger{color:#a94442;background-color:#f2dede;border-color:#ebccd1}
+.conditions {
+	color: #fff;
+	padding: 20px 0;
+}
+.conditions +a {
+	color: red;
+}

@@ -253,70 +253,45 @@ jQuery(document).ready(function($) {
 		$(this).nextUntil('.table__parent').toggleClass('hide');
 	});
 
-	//Clock
+	    /* Таймер */
+    var clock;
 
-	var clock;
-    var futureDate = new Date("August 23, 2017 00:00");
+    var futureDate = new Date("December 22, 2017 09:00 AM UTC+3");
     var currentDate = new Date();
-    var diff = (futureDate.getTime() - currentDate.getTime()) / 1000;
+
+
+    var diff = futureDate.getTime() / 1000 - currentDate.getTime() / 1000;
+
 
     function dayDiff(first, second) {
         return (second - first) / (1000 * 60 * 60 * 24);
     }
+
     if (dayDiff(currentDate, futureDate) < 100) {
         $('.clock').addClass('twoDayDigits');
     } else {
         $('.clock').addClass('threeDayDigits');
     }
-    if (diff <= 0) {
-        diff += 86400 ;
+
+    if (diff < 0) {
+        diff = 0;
+        $('.clock-stop').addClass("alert alert-danger alert-timer");
+        $('.clock-stop').html("Время вышло!");
+
     }
+
+    // Instantiate a coutdown FlipClock
     clock = $('.clock').FlipClock(diff, {
-        clockFace: 'HourlyCounter', //'DailyCounter',
-        language: 'ru',
-        countdown: true,
-		callbacks: {
-			stop: function() {
-				diffZ = 0
-				diffZ += 86400;
-				clockZ.setTime(diffZ);
-	  			clock.setCountdown(true);
-	  			clock.start();
-			}
-		}
-    });
-
-	//Zapisi-timer
-	var clockZ;
-    var futureDateZ = new Date("August 24, 2017 00:00");
-    var currentDateZ = new Date();
-    var diffZ = (futureDateZ.getTime() - currentDateZ.getTime()) / 1000;
-
-    function dayDiff(first, second) {
-        return (second - first) / (1000 * 60 * 60 * 24);
-    }
-    if (dayDiff(currentDateZ, futureDateZ) < 100) {
-        $('.clock').addClass('twoDayDigits');
-    } else {
-        $('.clock').addClass('threeDayDigits');
-    }
-    if (diffZ <= 0) {
-        diffZ += 86400;
-    }
-    clockZ = $('.clock-z').FlipClock(diffZ, {
         clockFace: 'HourlyCounter',
-        language: 'ru',
         countdown: true,
-		callbacks: {
-			stop: function() {
-				diffZ = 0
-				diffZ += 86400;
-				clockZ.setTime(diffZ);
-				clockZ.setCountdown(true);
-				clockZ.start();
-			}
-		}
-    });
+        language: 'ru',
+        callbacks: {
+            stop: function () {
+                $('.clock-stop').addClass("alert alert-danger alert-timer");
+        $('.clock-stop').html("Время вышло!");
+        
+            }
+        },});
 
 
 });
